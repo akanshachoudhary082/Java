@@ -58,6 +58,7 @@ public class Anagram {
 		
 		Arrays.sort(a);
 		Arrays.sort(b);
+		System.out.println(s1+ " " + s2);
 		
 		if(Arrays.equals(a, b))
 		{

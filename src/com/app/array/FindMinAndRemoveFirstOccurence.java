@@ -17,10 +17,10 @@ public class FindMinAndRemoveFirstOccurence {
 		l1.add(1);
 		
 		int min = Collections.min(l1);
-		
+		System.out.println("orginal list :"+l1);
 		l1.remove(Integer.valueOf(min));
 		
-		System.out.println("orginal list :"+l1);
+		
 		System.out.println("after removing the first occurence "+l1);
 	}
 }
