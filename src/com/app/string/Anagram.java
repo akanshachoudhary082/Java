@@ -54,8 +54,8 @@ public class Anagram {
 	        String s2 = "Silent";
 	        
 	        // Remove whitespace and convert to lowercase
-	        s1 = s1.replaceAll("\\s+", "").toLowerCase();
-	        s2 = s2.replaceAll("\\s+", "").toLowerCase();
+	        s1 = s1.replaceAll("[\\s]", "").toLowerCase();
+	        s2 = s2.replaceAll("[\\s]", "").toLowerCase();
 	        
 	        // Convert strings to char arrays
 	        char[] a = s1.toCharArray();

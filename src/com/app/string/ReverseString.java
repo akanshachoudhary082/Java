@@ -11,7 +11,7 @@ public class ReverseString {
 //		String s = sc.nextLine();
 //		String rev = "";
 //		
-//		for(int i=s.length()-1;i>=0;i--)
+//		for(int i=s.length()-1;i>=0;i--) 
 //		{
 //			rev = rev + s.charAt(i);
 //		}
@@ -19,9 +19,9 @@ public class ReverseString {
 //		System.out.println("reverse string "+ rev);
 //		
 //	}
-	
-	//--------------------using array ----------------------
-	
+
+	// --------------------using array ----------------------
+
 //	public static void main(String[] args)
 //	{
 //		Scanner sc = new Scanner(System.in);
@@ -41,19 +41,17 @@ public class ReverseString {
 //		
 //				
 //	}
-	
-	
-	public class ReverseString {
-	    public static void main(String[] args) {
-	        String input = "hello";
-	        
-	        // Use StringBuilder to reverse the string
-	        String reversed = new StringBuilder(input).reverse().toString();
-	        
-	        System.out.println("Reversed string: " + reversed);
-	    }
+
+	public static void main(String[] args) {
+		String input = "hello";
+
+		// Use StringBuilder to reverse the string
+		String reversed = new StringBuilder(input).reverse().toString();
+
+		System.out.println("Reversed string: " + reversed);
 	}
-
+	
+	
+	
+	
 }
-
-
