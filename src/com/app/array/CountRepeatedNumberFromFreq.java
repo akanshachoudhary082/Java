@@ -11,7 +11,6 @@ public class CountRepeatedNumberFromFreq {
 //		int n = arr.length;
 //		countFreq(arr, n);
 //	}
-//
 //	static void countFreq(int arr[], int n) {
 //		boolean visited[] = new boolean[n];
 //

@@ -1,3 +1,4 @@
+
 package com.app.array;
 
 import java.util.Arrays;
@@ -20,6 +21,7 @@ public class CountNonRepeatingNumberFromFreq {
 		{
 			if(visited[i] == true)
 				continue;
+			
 			
 			
 			int count = 1;
