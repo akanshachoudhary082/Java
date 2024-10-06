@@ -28,3 +28,4 @@ public class PalindromeNumber {
 		}
 	}
 }
+//palindrome number  545, 151, 34543, 343, 171, 48984
