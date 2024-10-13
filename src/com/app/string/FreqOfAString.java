@@ -26,7 +26,7 @@ public class FreqOfAString {
 	public static void freqOfString(String str)
 	{
 		int[] charCount = new int[256];
-		
+	
 		for(int i=0;i<str.length();i++)
 		{
 			charCount[str.charAt(i)]++;
@@ -36,7 +36,8 @@ public class FreqOfAString {
 		{
 			if(charCount[i]>0)
 			{
-				System.out.println(i+ ":" + charCount[i]);
+				
+				System.out.println((char)i+ ":" + charCount[i]);
 			}
 		}
 		
