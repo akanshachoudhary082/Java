@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class CountDistinctNumberFromEle {
 
+	//it will count of all element
+	
+	
 //    public static void main(String[] args) {  // Corrected 'mian' to 'main'
 //        int[] arr = {10, 40, 50, 20, 10, 20, 30, 10};
 //        int n = arr.length;
@@ -26,6 +29,7 @@ public class CountDistinctNumberFromEle {
 //    }
 	
 	
+	//=====================this will distinct ele count=============================
 	
 	public static void main(String[] args) {
         int[] arr = {10, 40, 50, 20, 10, 20, 30, 10}; // Initialize the array
@@ -39,8 +43,23 @@ public class CountDistinctNumberFromEle {
         for (int num : arr) {
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
         }
-
-        System.out.println(frequencyMap.size()); // Print the number of unique elements
+        
+        for(Map.Entry<Integer,Integer> entry : frequencyMap.entrySet())
+        {
+        	if(entry.getValue() == 1)
+        	{
+        		System.out.println(entry.getKey());
+        	}
+        }
+         // Print the number of unique elements
+        int uniqueCount = 0;
+        for (Integer count : frequencyMap.values()) {
+            if (count == 1) {
+                uniqueCount++; // Increment count for each unique element
+            }
+        }
+        System.out.println("Total unique elements: " + uniqueCount);
+    
     }
 }
 
