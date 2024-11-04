@@ -11,7 +11,7 @@ public class PrintAsciiValue {
     System.out.println("enter the character:");
     char ch = sc.next().charAt(0);
     
-    int asciiValue = (int )ch;
+    int asciiValue = ch;
     
     System.out.println("the Ascii value :"+ ch + " is "+ asciiValue);
     
