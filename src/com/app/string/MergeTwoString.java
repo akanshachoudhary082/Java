@@ -43,7 +43,7 @@ public class MergeTwoString {
 	{
 		String[] arr = {"Hello" ,"Beautiful","world"};
 		
-		String merge =String.join(" ", arr);
+		String merge = String.join(" ", arr);
 		
 		System.out.println(merge);
 	}

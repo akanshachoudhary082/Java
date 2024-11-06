@@ -7,30 +7,32 @@ import java.util.TreeSet;
 
 public class RemoveDuplicatesElements {
 
-//	public static void main(String[] args)
-//	{
-//		int[] arr = {10,20,20,30,30,40,40,50,50,60};
-//		int n = arr.length;
-//		//Arrays.sort(arr); it does not work in hashset so we have to use treeset to sert the elements
-//		Set hashSet = new HashSet();
-//		for(int i=0;i<n;i++)
-//		{
-//			hashSet.add(arr[i]);
-//		}
-//		System.out.println(hashSet);
-//	}
-	
-	
 	public static void main(String[] args)
 	{
-		int [] arr = {10, 20, 20, 30, 30, 40, 40, 50, 50, 60};
+		int[] arr = {10,20,20,70,70,30,30,40,40,50,50,60};
 		int n = arr.length;
-		
-		Set<Integer> sortedSet = new TreeSet<>();
+		//Arrays.sort(arr); it does not work in hashset so we have to use treeset to sert the elements
+		//Set hashSet = new HashSet();
+		Set<Integer> hashSet = new HashSet<>();
 		for(int i=0;i<n;i++)
 		{
-			sortedSet.add(arr[i]);
+			hashSet.add(arr[i]);
 		}
-		System.out.println(sortedSet);
+		System.out.println(hashSet);
 	}
+	
+	
+//	public static void main(String[] args)
+//	{
+//		int [] arr = {10, 20, 20, 30, 30, 40, 40, 50, 50, 60};
+//		int n = arr.length;
+//		
+//		Set<Integer> sortedSet = new TreeSet<>();
+//		//for(int i=0;i<n;i++)
+//		for(int num : arr)
+//		{
+//			sortedSet.add(num);
+//		}
+//		System.out.println(sortedSet);
+//	}
 }

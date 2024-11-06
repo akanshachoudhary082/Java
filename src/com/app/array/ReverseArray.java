@@ -44,29 +44,56 @@ public class ReverseArray {
 
 	// -------------------------- 2nd mehtod in recursive way-----------------
 
+//	public static void main(String[] args) {
+//		int arr[] = { 10, 11, 12, 13, 14 };
+//		int n = arr.length;
+//		int start = 0;
+//		int end = n - 1;
+//
+//		reverseRecursive(arr, start, end);
+//
+//		for (int i = 0; i < n; i++) {
+//			System.out.println(arr[i] + "");
+//		}
+//
+//	}
+//
+//	static void reverseRecursive(int[] arr, int start, int end) {
+//
+//		if (start >= end)
+//			return;
+//
+//		int temp = arr[start];
+//		arr[start] = arr[end];
+//		arr[end] = temp;
+//
+//		reverseRecursive(arr, start + 1, end - 1);
+//	}
+	
+	
+	//==========================witout calling function======================
+	
+	
 	public static void main(String[] args) {
-		int arr[] = { 10, 11, 12, 13, 14 };
-		int n = arr.length;
-		int start = 0;
-		int end = n - 1;
+	    int arr[] = {10, 11, 12, 13, 14};
+	    int n = arr.length;
+	    int start = 0;
+	    int end = n - 1;
 
-		reverseRecursive(arr, start, end);
+	    // Reverse array using a while loop
+	    while (start < end) {
+	        int temp = arr[start];
+	        arr[start] = arr[end];
+	        arr[end] = temp;
+	        
+	        start++;
+	        end--;
+	    }
 
-		for (int i = 0; i < n; i++) {
-			System.out.println(arr[i] + "");
-		}
-
+	    // Print the reversed array
+	    for (int i = 0; i < n; i++) {
+	        System.out.println(arr[i] + "");
+	    }
 	}
 
-	static void reverseRecursive(int[] arr, int start, int end) {
-
-		if (start >= end)
-			return;
-
-		int temp = arr[start];
-		arr[start] = arr[end];
-		arr[end] = temp;
-
-		reverseRecursive(arr, start + 1, end - 1);
-	}
 }
