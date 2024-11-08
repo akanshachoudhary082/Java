@@ -2,7 +2,7 @@ package com.app.pattern;
 
 import java.util.Scanner;
 
-public class TriangleStarPattern {
+public class Right_Aligned_TriangleStarPattern {
 
 	public static void main(String[] args)
 	{
@@ -21,3 +21,8 @@ public class TriangleStarPattern {
 		}
 	}
 }
+
+
+//* 
+//* * 
+//* * * 
