@@ -64,6 +64,41 @@ public class FindMaxOccurenceChar {
 
 		System.out.println("Character with maximum occurrence: " + maxChar);
 	}
-}
+
 
 // This code is contributed by kalyanbef
+
+
+
+//public static void main(String[] args) {
+//    
+//    String str = "Hello";
+//   
+//   Map<Character,Integer> freq = new HashMap<>();
+//   
+//   char []ch = str.toCharArray();
+//   
+//   for(char c : ch)
+//   {
+//     freq.put(c,freq.getOrDefault(c ,0)+1);
+//   }
+//   
+//   char maxChar = ' ';
+//   int maxCount = 0;
+//   
+//  for(Map.Entry<Character, Integer> entry : freq.entrySet())
+//  {
+//    if(entry.getValue() > maxCount)
+//    {
+//      maxChar = entry.getKey();
+//      maxCount = entry.getValue();
+//      
+//     
+//    }
+//  }
+//  
+//   System.out.println(maxChar + "=" + maxCount);
+//   
+//}
+	
+}
