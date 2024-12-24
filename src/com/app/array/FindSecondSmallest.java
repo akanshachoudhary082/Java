@@ -30,7 +30,7 @@ public class FindSecondSmallest {
 //		
 //		for(int i=0;i<n;i++)
 //		{
-//			if(arr[i] > first)
+//			if(arr[i] <first)
 //			{
 //				second = first;
 //				first = arr[i];
